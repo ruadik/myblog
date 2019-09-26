@@ -46,6 +46,7 @@ class Post extends Model
         $post = new static;
         $post->fill($filds);
         $post->user_id = 1;
+
         $post->save();
 
         return $post;
