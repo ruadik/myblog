@@ -2,27 +2,29 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class Post extends Model
 {
     use Sluggable;
 
-    protected $fillable = ['title', 'content'];
+    protected $fillable = ['title', 'content', 'date', 'description'];
     const IS_DRAFT = 0;
     const IS_PUBLIC = 1;
 
     public function Category()
     {
-        return $this->hasOne(Category::class);
+        return $this->belongsTo(Category::class);
     }
     public function User()
     {
-        return $this->hasOne(User::class);
+        return $this->belongsTo(User::class);
     }
-    public function Tag()
+    public function Tags()
     {
         return $this->belongsToMany(Tag::class,
             'Posts_Tags',
@@ -57,19 +59,23 @@ class Post extends Model
         $this->save();
     }
 
-    public function remove()
+    public function removeImage()
     {
         Storage::delete('uploads/'. $this->image);
+    }
+
+    public function remove()
+    {
+        $this->removeImage();
         $this->delete();
     }
 
     public function uploadImage($image){
-
         if($image == null){return;}
 
-        Storage::delete('uploads/'. $this->image);
-        $filename = str_random(10) .  '.' . $image->extension();
-        $image->saveAs('uploads', $filename);
+        $this->removeImage();
+        $filename = Str::random(10) .  '.' . $image->extension();
+        $image->storeAs('uploads', $filename);
         $this->image = $filename;
         $this->save();
     }
@@ -77,7 +83,7 @@ class Post extends Model
     public function getImage()
     {
         if($this->image == null){
-            return 'img/no-image.png';
+            return '/img/no-image.png';
         }
         return '/uploads/'.$this->image;
     }
@@ -122,6 +128,37 @@ class Post extends Model
             return $this->setStandart();
         }
         return $this->setFeatured();
+    }
+
+    public function setDateAttribute($value)
+    {
+        $date = Carbon::createFromFormat('d/m/y', $value)->format('Y-m-d');
+        $this->attributes['date'] = $date;
+    }
+
+    public function getDateAttribute($value)
+        {
+            $date = Carbon::createFromFormat('Y-m-d', $value)->format('d/m/y');
+            return $date;
+        }
+
+    public function getDate()
+    {
+        return Carbon::createFromFormat('d/m/y', $this->date)->format('F d, Y');
+    }
+
+    public function getCategoryTitle()
+    {
+        return($this->Category != null)
+        ? $this->Category->title
+        : 'Нет категории';
+    }
+
+    public function getTagsTitle()
+    {
+        return (!$this->Tags->isEmpty())
+        ? $tags = implode(',', $this->Tags->pluck('title')->all())
+        : 'Нет тегов';
     }
 
 }

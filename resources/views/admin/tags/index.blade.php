@@ -36,8 +36,9 @@
                         <th>Действия</th>
                     </tr>
                     </thead>
-                    @foreach($tags as $tag)
+
                     <tbody>
+                        @foreach($tags as $tag)
                         <tr>
                             <td>{{$tag->id}}</td>
                             <td>{{$tag->title}}</td>
@@ -49,8 +50,9 @@
                                 {!! Form::close() !!}
                             </td>
                         </tr>
+                        @endforeach
                     </tfoot>
-                    @endforeach
+
                 </table>
             </div>
             <!-- /.box-body -->

@@ -15,7 +15,7 @@ class AddColunmDataImageInPosts extends Migration
     {
         Schema::table('posts', function (Blueprint $table) {
             $table->string('image')->nullable();
-            $table->date('data')->nullable();
+            $table->date('date')->nullable();
         });
     }
 
@@ -27,8 +27,7 @@ class AddColunmDataImageInPosts extends Migration
     public function down()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->string('image')->change();
-            $table->date('data')->change();
+            $table->dropColumn(['image','data']);
         });
     }
 }

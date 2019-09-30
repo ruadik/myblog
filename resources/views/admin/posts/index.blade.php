@@ -31,6 +31,7 @@
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                         <tr>
+{{--                            <th> </th>--}}
                             <th>ID</th>
                             <th>Название</th>
                             <th>Категория</th>
@@ -40,23 +41,31 @@
                         </tr>
                         </thead>
 
-                        @foreach($posts as $post)
-                        <tbody>
+                            <tbody>
+                            @foreach($posts as $post)
                             <tr>
+{{--                                <td>{{Form::checkbox('checkDell', $post->id)}}</td>--}}
                                 <td>{{$post->id}}</td>
                                 <td>{{$post->title}}</td>
-                                <td>Обучение</td>
-                                <td>Laravel, PHP</td>
+                                <td>{{$post->getCategoryTitle()}}</td>
+                                <td>{{$post->getTagsTitle()}}</td>
                                 <td>
-                                    <img src="../assets/dist/img/boxed-bg.jpg" alt="" width="100">
+                                    <img src="{{$post->getImage()}}" alt="" width="100">
                                 </td>
                                 <td>
-                                    <a href="edit.html" class="fa fa-pencil"></a>
-                                    <a href="#" class="fa fa-remove"></a>
+                                    <a href="{{route('posts.edit', $post->id)}}" class="fa fa-pencil"></a>
+
+                                    {!! Form::open([
+                                        'route' => ['posts.destroy', $post->id],
+                                        'method' => 'DELETE'
+                                    ]) !!}
+                                        <button class="delete" onclick="return confirm('Уверены?')"><a class="fa fa-remove"></a></button>
+                                    {!! Form::close() !!}
                                 </td>
                             </tr>
-                        </tfoot>
-                       @endforeach
+                            @endforeach
+                            </tfoot>
+
 
                     </table>
                 </div>

@@ -1,9 +1,10 @@
-$(function () {
-    //Initialize Select2 Elements
+$(document).ready(function (){
+    $("#example1").DataTable();
     $(".select2").select2();
     //Date picker
     $('#datepicker').datepicker({
-        autoclose: true
+        autoclose: true,
+        format: 'dd/mm/yy'
     });
     //iCheck for checkbox and radio inputs
     $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({

@@ -39,8 +39,9 @@
                         </tr>
                         </thead>
 
-                        @foreach($users as $user)
+
                         <tbody>
+                        @foreach($users as $user)
                             <tr>
                                 <td>{{$user->id}}</td>
                                 <td>{{$user->name}}</td>
@@ -60,8 +61,9 @@
 
                                 </td>
                             </tr>
-                        </tfoot>
                         @endforeach
+                        </tfoot>
+
 
                     </table>
                 </div>

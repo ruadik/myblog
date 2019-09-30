@@ -41,9 +41,9 @@ mix.scripts([
     'resources/assets/admin/plugins/select2/select2.full.min.js',
     'resources/assets/admin/plugins/datepicker/bootstrap-datepicker.js',
     'resources/assets/admin/plugins/iCheck/icheck.min.js',
-    'resources/assets/admin/custom.js',
     'resources/assets/admin/plugins/datatables/jquery.dataTables.min.js',
     'resources/assets/admin/plugins/datatables/dataTables.bootstrap.min.js',
+    'resources/assets/admin/custom.js'
 ], 'public/js/admin.js').version();
 
 
@@ -55,3 +55,33 @@ mix.copy([
 
 mix.copy(['resources/assets/admin/dist/img',],  'public/img');
 mix.copy('resources/assets/admin/plugins/iCheck/minimal/blue.png',  'public/css');
+
+
+
+
+
+mix.styles([
+    'resources/assets/front/css/bootstrap.min.css',
+    'resources/assets/front/css/font-awesome.min.css',
+    'resources/assets/front/css/animate.min.css',
+    'resources/assets/front/css/owl.carousel.css',
+    'resources/assets/front/css/owl.theme.css',
+    'resources/assets/front/css/owl.transitions.css',
+    'resources/assets/front/css/style.css',
+    'resources/assets/front/css/responsive.css'
+], 'public/css/front.css').version();
+
+
+mix.scripts([
+    'resources/assets/front/js/jquery-1.11.3.min.js',
+    'resources/assets/front/js/bootstrap.min.js',
+    'resources/assets/front/js/owl.carousel.min.js',
+    'resources/assets/front/js/jquery.stickit.min.js',
+    'resources/assets/front/js/map.js',
+    'resources/assets/front/js/menu.js',
+    'resources/assets/front/js/scripts.js',
+    'resources/assets/front/custom.js'
+], 'public/js/front.js').version();
+
+mix.copy('resources/assets/front/fonts', 'public/fonts');
+mix.copy('resources/assets/front/images', 'public/images');

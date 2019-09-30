@@ -46,7 +46,6 @@
                                         <a href="{{route('categories.edit', $category->id)}}" class="fa fa-pencil"></a>
 
                                         {!! Form::open(['route'=>['categories.destroy', $category->id], 'method'=>'delete']) !!}
-{{--                                            <a class="fa fa-remove"></a>--}}
                                             <button class="delete" onclick="return confirm('Уверены?')"><a class="fa fa-remove"></a></button>
                                         {!! Form::close() !!}
 

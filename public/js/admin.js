@@ -2899,24 +2899,6 @@ A=!!f.aria,E=q+"-"+Math.random().toString(36).replace("0.",""),g='<div class="'+
 if(m.length)m.on("click.i mouseover.i mouseout.i touchbegin.i touchend.i",function(b){var d=b[n],e=h(this);if(!c[s]){if("click"==d){if(h(b.target).is("a"))return;F(a,!1,!0)}else y&&(/ut|nd/.test(d)?(g[z](B),e[z](C)):(g[v](B),e[v](C)));if(J)b.stopPropagation();else return!1}});a.on("click.i focus.i blur.i keyup.i keydown.i keypress.i",function(b){var d=b[n];b=b.keyCode;if("click"==d)return!1;if("keydown"==d&&32==b)return c[n]==u&&c[l]||(c[l]?t(a,l):D(a,l)),!1;if("keyup"==d&&c[n]==u)!c[l]&&D(a,l);else if(/us|ur/.test(d))g["blur"==
 d?z:v](x)});d.on("click mousedown mouseup mouseover mouseout touchbegin.i touchend.i",function(b){var d=b[n],e=/wn|up/.test(d)?w:B;if(!c[s]){if("click"==d)F(a,!1,!0);else{if(/wn|er|in/.test(d))g[v](e);else g[z](e+" "+w);if(m.length&&y&&e==B)m[/ut|nd/.test(d)?z:v](C)}if(J)b.stopPropagation();else return!1}})})}})(window.jQuery||window.Zepto);
 
-$(function () {
-    //Initialize Select2 Elements
-    $(".select2").select2();
-    //Date picker
-    $('#datepicker').datepicker({
-        autoclose: true
-    });
-    //iCheck for checkbox and radio inputs
-    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
-        checkboxClass: 'icheckbox_minimal-blue',
-        radioClass: 'iradio_minimal-blue'
-    });
-});
-
-
-$(function () {
-    $("#example1").DataTable();
-});
 /*! DataTables 1.10.7
  * ©2008-2015 SpryMedia Ltd - datatables.net/license
  */
@@ -3086,3 +3068,23 @@ b});return h.fn.dataTable};"function"===typeof define&&define.amd?define("datata
 b(a.currentTarget).hasClass("disabled")||t.page(a.data.action).draw(!1)};k=0;for(h=e.length;k<h;k++)if(a=e[k],b.isArray(a))p(c,a);else{f=d="";switch(a){case "ellipsis":d="&hellip;";f="disabled";break;case "first":d=j.sFirst;f=a+(0<i?"":" disabled");break;case "previous":d=j.sPrevious;f=a+(0<i?"":" disabled");break;case "next":d=j.sNext;f=a+(i<m-1?"":" disabled");break;case "last":d=j.sLast;f=a+(i<m-1?"":" disabled");break;default:d=a+1,f=i===a?"active":""}d&&(o=b("<li>",{"class":u.sPageButton+" "+
 f,id:0===r&&"string"===typeof a?g.sTableId+"_"+a:null}).append(b("<a>",{href:"#","aria-controls":g.sTableId,"data-dt-idx":n,tabindex:g.iTabIndex}).html(d)).appendTo(c),g.oApi._fnBindAction(o,{action:a},l),n++)}},h;try{h=b(q.activeElement).data("dt-idx")}catch(l){}p(b(e).empty().html('<ul class="pagination"/>').children("ul"),s);h&&b(e).find("[data-dt-idx="+h+"]").focus()};c.TableTools&&(b.extend(!0,c.TableTools.classes,{container:"DTTT btn-group",buttons:{normal:"btn btn-default",disabled:"disabled"},
 collection:{container:"DTTT_dropdown dropdown-menu",buttons:{normal:"",disabled:"disabled"}},print:{info:"DTTT_print_info"},select:{row:"active"}}),b.extend(!0,c.TableTools.DEFAULTS.oTags,{collection:{container:"ul",button:"li",liner:"a"}}))};"function"===typeof define&&define.amd?define(["jquery","datatables"],e):"object"===typeof exports?e(require("jquery"),require("datatables")):jQuery&&e(jQuery,jQuery.fn.dataTable)})(window,document);
+
+$(document).ready(function (){
+    $("#example1").DataTable();
+    $(".select2").select2();
+    //Date picker
+    $('#datepicker').datepicker({
+        autoclose: true,
+        format: 'dd/mm/yy'
+    });
+    //iCheck for checkbox and radio inputs
+    $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
+        checkboxClass: 'icheckbox_minimal-blue',
+        radioClass: 'iradio_minimal-blue'
+    });
+});
+
+
+$(function () {
+    $("#example1").DataTable();
+});

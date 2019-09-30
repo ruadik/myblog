@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Category;
 use App\Post;
+use App\Tag;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -26,7 +28,9 @@ class PostsController extends Controller
      */
     public function create()
     {
-        return view('admin.posts.create');
+        $categories = Category::pluck('title','id');
+        $tags = Tag::pluck('title','id');
+        return view('admin.posts.create', compact('categories','tags'));
     }
 
     /**
@@ -37,8 +41,23 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-//        dd($request->all());
-        Post::add($request->all());
+        $request->validate([
+            'title' => 'required',
+            'content' => 'required',
+            'description' => 'required',
+            'date' => 'required',
+            'image' => 'nullable|image'
+        ]);
+
+        $post = Post::add($request->all());
+        $post->uploadImage($request->file('image'));
+
+        $post->setCategory($request->category_id);
+
+        $post->setTags($request->tags);
+
+        $post->toggleStatus($request->status);
+        $post->toggleFeatured($request->is_featured);
 
         return redirect()->route('posts.index');
     }
@@ -62,7 +81,13 @@ class PostsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $post = Post::find($id);
+        $categories = Category::pluck('title', 'id');
+        $tags = Tag::pluck('title', 'id');
+        $setTags = $post->Tags->pluck('id')->all();
+//        dd($post);
+
+        return view('admin.posts.edit', compact('post','categories', 'tags', 'setTags'));
     }
 
     /**
@@ -74,7 +99,22 @@ class PostsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'title' => 'required',
+            'content' => 'required',
+            'date' => 'required',
+            'image' => 'nullable|image'
+        ]);
+
+        $post = Post::find($id);
+        $post->edit($request->all());
+        $post->uploadImage($request->file('image'));
+        $post->setCategory($request->category_id);
+        $post->setTags($request->tags);
+        $post->toggleFeatured($request->is_featured);
+        $post->toggleStatus($request->status);
+
+        return redirect()->route('posts.index');
     }
 
     /**
@@ -85,6 +125,9 @@ class PostsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::find($id);
+        $post->remove();
+
+        return redirect()->route('posts.index');
     }
 }

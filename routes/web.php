@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
 
 Route::group(['prefix'=> 'admin', 'namespace'=>'Admin'], function (){
     Route::get('/', 'DashboardController@index');
@@ -22,3 +20,8 @@ Route::group(['prefix'=> 'admin', 'namespace'=>'Admin'], function (){
     Route::resource('users', 'UsersController');
     Route::resource('posts', 'PostsController');
 });
+
+
+
+
+
