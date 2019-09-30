@@ -161,4 +161,27 @@ class Post extends Model
         : 'Нет тегов';
     }
 
+    public function hasPrevious()
+    {
+        return $PreviousId = self::where('id', '<', $this->id)->max('id');
+    }
+    public function getPrevious()
+    {
+        return self::find($this->hasPrevious());
+    }
+
+    public function hasNext()
+    {
+        return $nextId = self::where('id', '>', $this->id)->min('id');
+    }
+    public function getNext()
+    {
+        return self::find($this->hasNext());
+    }
+
+    public function related()
+    {
+        return static::all()->except($this->id);
+    }
+
 }
