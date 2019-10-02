@@ -22,8 +22,8 @@ class AuthController extends Controller
         ]);
 
         $user = User::add($request->all());
-
         $user->generatePassword($request->password);
+        $user->makeNormal();
 
         return redirect()->route('login');
     }

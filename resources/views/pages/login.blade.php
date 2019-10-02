@@ -16,7 +16,7 @@
 
             @include('admin.errors')
 
-            <form class="form-horizontal contact-form" role="form" method="post" action="{{route('login')}}">
+            <form class="form-horizontal contact-form" role="form" method="post" action="{{route('login.store')}}">
                 @csrf
                 <div class="form-group">
                     <div class="col-md-12">

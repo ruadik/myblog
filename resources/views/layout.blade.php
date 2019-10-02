@@ -45,7 +45,7 @@
 
                 <ul class="nav navbar-nav text-uppercase">
                     <li><a href="{{route('home')}}">Homepage</a></li>
-                    <li><a href="about-me.html">ABOUT ME </a></li>
+                    <li><a href="about-me.html">ABOUT ME</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
                 </ul>
 
@@ -54,7 +54,7 @@
                         <li><a href="{{route('register')}}">Register</a></li>
                         <li><a href="{{route('login')}}">Login</a></li>
                     @else
-                        <li><a href="contact.html">My profile</a></li>
+                        <li><a href="{{route('profile.edit')}}">My profile</a></li>
                         <li><a href="{{route('logout')}}">Logout</a></li>
                     @endif
                 </ul>

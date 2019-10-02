@@ -48,6 +48,7 @@ class UsersController extends Controller
         $user = User::add($request->all());
         $user->generatePassword($request->password);
         $user->uploadAvatar($request->avatar);
+        $user->makeNormal();
         return redirect()->route('users.index');
     }
 

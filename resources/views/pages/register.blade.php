@@ -8,7 +8,7 @@
         <h3 class="text-uppercase">Register</h3>
         <br>
         @include('admin.errors')
-        <form class="form-horizontal contact-form" role="form" method="post" action="{{route('register')}}">
+        <form class="form-horizontal contact-form" role="form" method="post" action="{{route('register.store')}}">
             @csrf
             <div class="form-group">
                 <div class="col-md-12">
