@@ -11,8 +11,17 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
 Route::get('/post/{slug}', 'HomeController@show')->name('post.show');
+Route::get('/category/{slug}', 'HomeController@category')->name('category.show');
+Route::get('/tag/{slug}', 'HomeController@tag')->name('tag.show');
+Route::get('/register', 'AuthController@registerForm')->name('register.form');
+Route::post('/register', 'AuthController@register')->name('register');
+Route::get('/login', 'AuthController@loginForm')->name('login.form');
+Route::post('/login', 'AuthController@login')->name('login');
+Route::get('/logout', 'AuthController@logout')->name('logout');
+
+
 
 Route::group(['prefix'=> 'admin', 'namespace'=>'Admin'], function (){
     Route::get('/', 'DashboardController@index');

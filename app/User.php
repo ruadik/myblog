@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
@@ -70,7 +71,8 @@ class User extends Authenticatable
     public function generatePassword($password)
     {
         if($password == null) {return;}
-            $this->password = bcrypt(Str::random(10, $password));
+//            $this->password = bcrypt(Str::random(10, $password));
+            $this->password = Hash::make($password);
             $this->save();
     }
 
