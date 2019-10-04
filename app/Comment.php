@@ -8,12 +8,12 @@ class Comment extends Model
 {
     public function User()
     {
-        return $this->hasOne(User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function Post()
     {
-        return $this->hasOne(Post::class);
+        return $this->belongsTo(Post::class);
     }
 
 
@@ -39,5 +39,15 @@ class Comment extends Model
     {
         $this->delete();
     }
+
+//    public function getCommentsStatus()
+//    {
+//        $status = self::where('status', 1);
+//        if($status == 1){
+//            return 1;
+//        }
+////        dd($status->pluck('status'));
+//
+//    }
 
 }

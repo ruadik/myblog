@@ -31,6 +31,11 @@ class Post extends Model
             'post_id',
             'tags_id');
     }
+    public function Comments()
+    {
+        return $this->hasMany(Comment::class);
+    }
+
 
 
     public function sluggable()
@@ -182,6 +187,11 @@ class Post extends Model
     public function related()
     {
         return static::all()->except($this->id);
+    }
+
+    public function getComments()
+    {
+        return $this->Comments->where('status', 1);
     }
 
 }

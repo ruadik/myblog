@@ -27,6 +27,7 @@ Route::group(['middleware' => 'auth'], function (){
     Route::get('/logout', 'AuthController@logout')->name('logout');
     Route::get('/profile', 'ProfileController@edit')->name('profile.edit');
     Route::post('/profile', 'ProfileController@update')->name('profile.update');
+    Route::post('/comment', 'CommentController@store')->name('comment.store');
 });
 
 Route::group(['prefix'=> 'admin', 'namespace'=>'Admin', 'middleware' => 'admin'], function (){
@@ -35,6 +36,9 @@ Route::group(['prefix'=> 'admin', 'namespace'=>'Admin', 'middleware' => 'admin']
     Route::resource('tags', 'TagsController');
     Route::resource('users', 'UsersController');
     Route::resource('posts', 'PostsController');
+    Route::get('comments', 'CommentsController@index')->name('comments.index');
+    Route::get('comment/{id}', 'CommentsController@update')->name('comment.update');
+    Route::delete('comment/{id}', 'CommentsController@destroy')->name('comment.destroy');
 });
 
 
