@@ -8,12 +8,6 @@
             <h3 class="text-uppercase">Login</h3>
             <br>
 
-            @if (session('status'))
-                <div class="alert alert-danger">
-                    {{ session('status') }}
-                </div>
-            @endif
-
             @include('admin.errors')
 
             <form class="form-horizontal contact-form" role="form" method="post" action="{{route('login.store')}}">

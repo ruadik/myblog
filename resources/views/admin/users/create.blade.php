@@ -41,6 +41,13 @@
 
                                 <p class="help-block">Какое-нибудь уведомление о форматах..</p>
                             </div>
+
+                            <div class="form-group">
+                                {{ Form::checkbox('is_ban', '1', false, ['class'=>'minimal']) }}
+                                <label>
+                                    Бан
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <!-- /.box-body -->

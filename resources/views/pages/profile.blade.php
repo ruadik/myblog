@@ -9,12 +9,6 @@
             <br>
             @include('admin.errors')
 
-            @if (session('status'))
-                <div class="alert alert-success">
-                    {{ session('status') }}
-                </div>
-            @endif
-
             <img src="{{$user->getAvatar()}}" alt="" class="profile-image">
             <form class="form-horizontal contact-form" role="form" method="post" action="{{route('profile.update')}}" enctype="multipart/form-data">
                 @csrf

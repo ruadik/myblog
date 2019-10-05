@@ -34,7 +34,8 @@ class AppServiceProvider extends ServiceProvider
         );
 
         View::composer(
-            'admin._sidebar', 'App\Http\View\Composers\AdminSidebarComposer');
+            'admin._sidebar', 'App\Http\View\Composers\AdminSidebarComposer'
+        );
     }
 
 }

@@ -45,8 +45,8 @@
 
                 <ul class="nav navbar-nav text-uppercase">
                     <li><a href="{{route('home')}}">Homepage</a></li>
-                    <li><a href="about-me.html">ABOUT ME</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="{{route('aboutMe')}}">ABOUT ME</a></li>
+                    <li><a href="{{route('contact')}}">CONTACT</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav text-uppercase pull-right">
@@ -81,6 +81,13 @@
     <div class="container">
         <div class="row">
 
+            <div class="col-md-12">
+                @if (session('status'))
+                    <div class="alert alert-info">
+                        {{ session('status') }}
+                    </div>
+                @endif
+            </div>
 
             @yield('content')
 

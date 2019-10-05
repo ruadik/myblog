@@ -88,14 +88,14 @@ class User extends Authenticatable
 
         $this->removeAvatar();
         $fileName = Str::random(10). '.' .$image->extension();
-        $image->storeAs('uploads', $fileName);
+        $image->storeAs('img', $fileName);
         $this->avatar = $fileName;
         $this->save();
     }
 
     public function removeAvatar()
     {
-        Storage::delete('uploads/'.$this->avatar);
+        Storage::delete('img/'.$this->avatar);
     }
 
     public function getAvatar()
@@ -103,7 +103,7 @@ class User extends Authenticatable
         if($this->avatar == null){
             return '/img/no-image.png';
         }
-        return '/uploads/' . $this->avatar;
+        return '/img/' . $this->avatar;
     }
 
     public function makeAdmin()
@@ -126,20 +126,27 @@ class User extends Authenticatable
 
     public function ban()
     {
-        $this->status = User::IS_BANNED;
+        $this->is_ban = User::IS_BANNED;
         $this->save();
     }
     public function unBan()
     {
-        $this->status = User::IS_ACTIVE;
+        $this->is_ban = User::IS_ACTIVE;
         $this->save();
     }
     public function toggleBan($value)
     {
-        if($value == null){
+        if(isset($value)){
             return $this->Ban();
         }
         return $this->unBan();
+    }
+    public function toggleBanIndex()
+    {
+        if($this->is_ban == 1){
+            return $this->unBan();
+        }
+        return $this->ban();
     }
 
 

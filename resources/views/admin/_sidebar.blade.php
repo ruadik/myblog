@@ -4,10 +4,10 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="{{$userAvatar}}" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-                <p>Alexander Pierce</p>
+                <p>{{$userName}}</p>
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>
@@ -26,7 +26,7 @@
         <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
             <li class="treeview">
-                <a href="#">
+                <a href="{{route('admin.home')}}">
                     <i class="fa fa-dashboard"></i> <span>Админ-панель</span>
                 </a>
             </li>
@@ -37,12 +37,21 @@
                 <a href="{{route('comments.index')}}">
                     <i class="fa fa-commenting"></i> <span>Комментарии</span>
                     <span class="pull-right-container">
-                        <small class="label pull-right bg-green">{{$countComments}}</small>
+                        <small class="label pull-left bg-green">{{$countComments}}</small>
+                        <small class="label pull-right bg-red">{{$countDisComments}}</small>
                     </span>
                 </a>
             </li>
             <li><a href={{route('users.index')}}><i class="fa fa-users"></i> <span>Пользователи</span></a></li>
-            <li><a href="#"><i class="fa fa-user-plus"></i> <span>Подписчики</span></a></li>
+            <li>
+                <a href="{{route('subscriptions.index')}}">
+                    <i class="fa fa-user-plus"></i> <span>Подписчики</span>
+                    <span class="pull-right-container">
+                        <small class="label pull-left bg-green">{{$countSubs}}</small>
+                        <small class="label pull-right bg-red">{{$countDisSubs}}</small>
+                    </span>
+                </a>
+            </li>
 
         </ul>
     </section>

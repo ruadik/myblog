@@ -10,22 +10,12 @@ use App\Http\Controllers\Controller;
 
 class PostsController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $posts = Post::all();
         return view('admin.posts.index', compact('posts'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function create()
     {
         $categories = Category::pluck('title','id');
@@ -33,12 +23,6 @@ class PostsController extends Controller
         return view('admin.posts.create', compact('categories','tags'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $request->validate([
@@ -62,41 +46,16 @@ class PostsController extends Controller
         return redirect()->route('posts.index');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function edit($id)
     {
         $post = Post::find($id);
         $categories = Category::pluck('title', 'id');
         $tags = Tag::pluck('title', 'id');
         $setTags = $post->Tags->pluck('id')->all();
-//        dd($post);
 
         return view('admin.posts.edit', compact('post','categories', 'tags', 'setTags'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function update(Request $request, $id)
     {
         $request->validate([
@@ -111,18 +70,12 @@ class PostsController extends Controller
         $post->uploadImage($request->file('image'));
         $post->setCategory($request->category_id);
         $post->setTags($request->tags);
-        $post->toggleFeatured($request->is_featured);
+        $post->toggleFeatured($request->if_featured);
         $post->toggleStatus($request->status);
 
         return redirect()->route('posts.index');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
         $post = Post::find($id);

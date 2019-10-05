@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Subscription extends Model
 {
@@ -10,8 +11,24 @@ class Subscription extends Model
     {
         $subscription = new static;
         $subscription->email = $email;
-        $subscription->token = str_random(100);
         $subscription->save();
+
+        return $subscription;
+    }
+
+    public function generateToken()
+    {
+        $this->token = Str::random(100);
+        $this->save();
+    }
+
+    public function verify($token)
+    {
+        $subs = self::where('token', $token)->firstOrFail();
+        $subs->token=null;
+        $subs->save();
+
+        return $subs;
     }
 
     public function remove()

@@ -5,6 +5,7 @@ namespace App;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
@@ -52,7 +53,7 @@ class Post extends Model
     {
         $post = new static;
         $post->fill($filds);
-        $post->user_id = 1;
+        $post->user_id = Auth::user()->id;
 
         $post->save();
 
@@ -114,25 +115,33 @@ class Post extends Model
         $this->save();
     }
     public function toggleStatus($value){
-        if($value == null){
+        if(isset($value)){
             return $this->setDraft();
         }
         return $this->setPublic();
     }
+    public function status()
+    {
+        if($this->status == 1){
+            return false;
+        }
+        return true;
+    }
+
 
     public function setFeatured(){
-        $this->is_featured = 1;
+        $this->is_featured = Post::IS_PUBLIC;
         $this->save();
     }
     public function setStandart(){
-        $this->is_featured = 0;
+        $this->is_featured = Post::IS_DRAFT;
         $this->save();
     }
     public function toggleFeatured($value){
-        if($value == null){
-            return $this->setStandart();
+        if(isset($value)){
+            return $this->setFeatured();
         }
-        return $this->setFeatured();
+        return $this->setStandart();
     }
 
     public function setDateAttribute($value)

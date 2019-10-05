@@ -50,6 +50,12 @@
                                     <img src="{{$user->getAvatar()}}" alt="" class="img-responsive" width="150">
                                 </td>
                                 <td>
+                                    @if($user->is_ban == 1)
+                                        <a href="{{route('user.isBan', $user->id)}}" class="fa fa-lock"></a>
+                                    @else
+                                        <a href="{{route('user.isBan', $user->id)}}" class="fa fa-unlock"></a>
+                                    @endif
+
                                     <a href="{{route('users.edit', $user->id)}}" class="fa fa-pencil"></a>
 
                                     {{ Form::open([

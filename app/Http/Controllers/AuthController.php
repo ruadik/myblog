@@ -25,7 +25,7 @@ class AuthController extends Controller
         $user->generatePassword($request->password);
         $user->makeNormal();
 
-        return redirect()->route('login');
+        return redirect()->route('login')->with('status', 'Вы зарегистрированы!');
     }
 
     public function loginForm()

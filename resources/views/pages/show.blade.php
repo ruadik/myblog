@@ -5,12 +5,6 @@
         <article class="post">
             @include('admin.errors')
 
-            @if (session('status'))
-                <div class="alert alert-success">
-                    {{ session('status') }}
-                </div>
-            @endif
-
             <div class="post-thumb">
                 <a href="#"><img src="{{$post->getImage()}}" alt=""></a>
             </div>
