@@ -43,12 +43,18 @@ class AuthController extends Controller
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
+            $this->if_is_ban();
             return redirect()->route('home');
         }
 
         return redirect()->route('login')->with('status', 'Неверный логин или пароль!!!');
+    }
 
-
+    public function if_is_ban()
+    {
+        if(Auth::user()->is_ban == 1) {
+            $this->logout()->with('status', 'Вы забанены!');
+        }
     }
 
     public function logout()

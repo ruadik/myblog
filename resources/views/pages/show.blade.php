@@ -44,7 +44,7 @@
             <img src="{{$post->user->getAvatar()}}" class="pull-left img-circle .img-thumbnail" width="20%" height="15%"   alt="">
             <h4>{{$post->user->name}}</h4>
 
-            <p>{{$post->description}}</p>
+            <p>{!!$post->description!!}</p>
         </div><!--top comment end-->
 
         <div class="row"><!--blog next previous-->
