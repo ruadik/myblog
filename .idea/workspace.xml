@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="809454da-d816-4ad6-9e12-16f58c894262" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="809454da-d816-4ad6-9e12-16f58c894262" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,17 +12,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Procfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="42" selection-start-column="42" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -302,12 +289,12 @@
       <updated>1569509258242</updated>
       <workItem from="1569509259748" duration="144154000" />
       <workItem from="1570089357251" duration="81493000" />
-      <workItem from="1570433533985" duration="729000" />
+      <workItem from="1570433533985" duration="1033000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226376000" />
+    <option name="totallyTimeSpent" value="226680000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -320,15 +307,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" sideWeight="0.5027933" side_tool="true" weight="0.16845638" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49720672" visible="true" weight="0.18724832" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49720672" visible="true" weight="0.18724832" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="0" weight="0.32991204" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49932885" visible="true" weight="0.3621701" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.49932885" visible="true" weight="0.31231672" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50067115" side_tool="true" weight="0.2111437" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32991204" />
