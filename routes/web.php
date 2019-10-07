@@ -34,8 +34,7 @@ Route::group(['middleware' => 'auth'], function (){
     Route::post('/comment', 'CommentController@store')->name('comment.store');
 });
 
-//Route::group(['prefix'=> 'admin', 'namespace'=>'Admin', 'middleware' => 'admin'], function (){
-Route::group(['prefix'=> 'admin', 'namespace'=>'Admin'], function (){
+Route::group(['prefix'=> 'admin', 'namespace'=>'Admin', 'middleware' => 'admin'], function (){
     Route::get('/', 'DashboardController@index')->name('admin.home');
     Route::resource('categories', 'CategoriesController');
     Route::resource('tags', 'TagsController');
