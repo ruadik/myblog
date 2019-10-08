@@ -38,7 +38,7 @@
                             @foreach($comments as $comment)
                                 <tr>
                                     <td>{{$comment->id}}</td>
-                                    <td>{{$comment->text}}</td>
+                                    <td>{!! $comment->text!!}</td>
                                     <td>
                                         @if($comment->status == 1)
                                             <a href="{{route('comment.update', $comment->id)}}" class="fa fa fa-unlock"></a>

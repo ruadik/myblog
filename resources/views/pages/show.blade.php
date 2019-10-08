@@ -119,7 +119,7 @@
                         </p>
 
                         <p class="para">
-                            {{$comment->text}}
+                            {!!$comment->text!!}
                         </p>
                     </div>
                 </div>
