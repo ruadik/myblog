@@ -31,6 +31,27 @@ class Subscription extends Model
         return $subs;
     }
 
+
+    public function verifying()
+    {
+        $this->token = null;
+        $this->save();
+    }
+    public function unVerifying()
+    {
+        $this->generateToken();
+    }
+    public function toggleVerify()
+    {
+        return($this->token == null)
+        ? $this->unVerifying()
+        : $this->verifying();
+    }
+
+
+
+
+
     public function remove()
     {
         $this->delete();

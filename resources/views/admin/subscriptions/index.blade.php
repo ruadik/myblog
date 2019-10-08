@@ -53,6 +53,26 @@
                                 <td>{{$sub->id}}</td>
                                 <td>{{$sub->email}}</td>
                                 <td>
+
+                                    @if($sub->token == null)
+                                        {!! Form::open([
+                                                        'route' => ['subscriptions.update', $sub->id],
+                                                        'method' => 'put'
+                                                        ]) !!}
+                                        <button class="delete"><a class="fa fa-unlock"></a></button>
+                                        {!! Form::close() !!}
+
+                                    @else
+                                        {!! Form::open([
+                                                        'route' => ['subscriptions.update', $sub->id],
+                                                        'method' => 'put'
+                                                        ]) !!}
+                                        <button class="delete"><a class="fa fa-lock"></a></button>
+                                        {!! Form::close() !!}
+                                    @endif
+
+
+
                                     {!! Form::open([
                                                     'route' => ['subscriptions.destroy', $sub->id],
                                                     'method' => 'delete'

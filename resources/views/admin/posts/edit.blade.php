@@ -40,27 +40,35 @@
                             </div>
                             <div class="form-group">
                                 <label>Категория</label>
+{{--                                {{dd($post->getCategoryTitle())}}--}}
+
                                 {{Form::select(
-                                'category_id',
-                                $categories,
-                                $post->getCategoryTitle(),
-                                ['class' => 'orm-control select2',
-                                 'style' => 'width: 100%'
-                                ])
+                                                'category_id',
+                                                $categories,
+                                                null,
+                                                    [
+                                                         'placeholder' => $post->getCategoryTitle(),
+                                                         'class' => 'orm-control select2',
+                                                         'style' => 'width: 100%'
+                                                    ]
+                                                )
                                 }}
+
                             </div>
                             <div class="form-group">
                                 <label>Теги</label>
                                 {{Form::select(
-                                'tags[]',
-                                $tags,
-                                $setTags,
-                                [
-                                'class' => 'form-control select2',
-                                'multiple' => 'multiple',
-                                'data-placeholder' => 'Выберите теги',
-                                'style' => 'width: 100%']
-                                )}}
+                                                'tags[]',
+                                                $tags,
+                                                $setTags,
+                                                    [
+                                                        'class' => 'form-control select2',
+                                                        'multiple' => 'multiple',
+                                                        'data-placeholder' => 'Выберите теги',
+                                                        'style' => 'width: 100%'
+                                                    ]
+                                                )
+                                }}
 
                             </div>
                             <!-- Date -->

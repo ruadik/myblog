@@ -79,7 +79,10 @@ class SubscriptionsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $subscription = Subscription::find($id);
+        $subscription->toggleVerify();
+
+        return redirect()->route('subscriptions.index')->with('status', 'Статус подписчика обновлен!');
     }
 
     /**
