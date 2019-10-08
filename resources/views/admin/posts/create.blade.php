@@ -40,6 +40,7 @@
                                                     $categories,
                                                     null,
                                                     [
+                                                    'placeholder' => "",
                                                     'class' => 'form-control select2',
                                                     'style' => 'width: 100%'
                                                     ])

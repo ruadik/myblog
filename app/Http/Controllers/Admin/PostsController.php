@@ -27,6 +27,7 @@ class PostsController extends Controller
     {
         $request->validate([
             'title' => 'required',
+            'category_id' => 'required',
             'content' => 'required',
             'description' => 'required',
             'date' => 'required',
