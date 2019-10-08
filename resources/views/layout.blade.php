@@ -151,7 +151,7 @@
 
                         <p> Phone: +123 456 78900</p>
 
-                        <p>rahim@marlindev.ru</p>
+                        <p>test@test.ru</p>
                     </div>
                 </aside>
             </div>
@@ -252,8 +252,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center">&copy; 2017 <a href="#">Blog, </a> Designed with <i
-                                class="fa fa-heart"></i> by <a href="#">Marlin</a>
+                    <div class="text-center">&copy; 2019 <a href="#">Blog, </a> Designed with <i
+                                class="fa fa-heart"></i> by <a href="#">Adik.Ru.</a>
                     </div>
                 </div>
             </div>
