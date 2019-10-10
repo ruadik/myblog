@@ -5,6 +5,74 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProfileController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/footer-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/footer-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/front.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/front.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/css/AjaxLoader.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/css/animate.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/css/grabbing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/css/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/css/owl.theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/css/owl.transitions.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/fonts/fontawesome-webfont93e3.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/fonts/fontawesome-webfont93e3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/fonts/fontawesome-webfont93e3.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/fonts/fontawesome-webfont93e3.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/fonts/fontawesome-webfont93e3.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/fonts/fontawesome-webfontd41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/fonts/glyphicons-halflings-regulard41d.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/abc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/author.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/blog-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/blog-grid.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/blog-next.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/coming-soon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/comment-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/comment.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/footer-img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/footer-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/header-3-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/header-logo-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/ins-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/ins-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/ins-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/ins-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/ins-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/ins-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/ins-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/ins-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/ins-flow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/me-cover.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/p1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/p2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/p3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/r-p.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/related-post-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/related-post-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/images/related-post-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/js/jquery-1.11.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/js/jquery.stickit.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/js/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/js/menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/js/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/front/js/scripts.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/comments/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/comments/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/show.blade.php" afterDir="false" />
@@ -19,17 +87,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/show.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="114" column="57" lean-forward="true" selection-start-line="114" selection-start-column="57" selection-end-line="114" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -228,7 +286,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -239,17 +296,6 @@
             <path>
               <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="myblog" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myblog" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myblog" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -263,25 +309,13 @@
               <item name="myblog" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myblog" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myblog" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -359,7 +393,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260350000" />
+    <option name="totallyTimeSpent" value="260364000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -371,16 +405,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="840" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" sideWeight="0.5055679" side_tool="true" weight="0.20067114" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49443206" visible="true" weight="0.20067114" />
+      <window_info content_ui="combo" id="Project" order="2" sideWeight="0.49443206" visible="true" weight="0.21409395" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="0" weight="0.32991204" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.4986577" visible="true" weight="0.20674486" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.4986577" visible="true" weight="0.414956" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5013423" side_tool="true" weight="0.54105574" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32991204" />
@@ -397,6 +430,30 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info id="npm" order="1" sideWeight="0.5055679" side_tool="true" weight="0.20067114" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" sideWeight="0.49443206" visible="true" weight="0.20067114" />
+      <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="0" weight="0.32991204" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.4986577" weight="0.44428152" />
+      <window_info anchor="bottom" id="Database Changes" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5013423" side_tool="true" weight="0.54105574" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.32991204" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32991204" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.32991204" />
+      <window_info anchor="bottom" id="Run" order="9" weight="0.36363637" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.32991204" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -493,9 +550,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/uploads/VGLKpxafNH.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/uploads/VGLKpxafNH.jpeg" />
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/UsersController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
