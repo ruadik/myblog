@@ -2,53 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="809454da-d816-4ad6-9e12-16f58c894262" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/footer-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/footer-logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/BrdPszLx40.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/ZRg1glENrV.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/photo1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/photo2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/photo3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/photo4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user1-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user2-160x160.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user3-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user4-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user5-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user6-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user7-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/user8-128x128.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/vqrPPuJOPs.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/w4OoGu97FD.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/zdSuJEwU2f.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/7QtzW0BJ0w.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/7VcDDXThez.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/8lhZEKSnr4.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/BEsx7OTNDJ.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/CDqQeUTxgi.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/FeuslZaWe8.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/GLDShrd83c.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/MxDzvaN0XS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/N2C6MLIsC0.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/Rd5ffafqnq.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/VhHceb1pIQ.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/Y8mFYd8RYG.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/fi7lUqvvDL.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/fwA7H9Y8ad.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/iQ82o5OqMC.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/jLAsKCrRGy.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/kaG65LtPv8.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/pSSSdJn3Gs.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/pUyPqXbXJd.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/v7DjNK8DO2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/uploads/wtxxEjjDxD.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/_sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/pages/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/show.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +15,53 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="e#66#79#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/factories/TagFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+              <folding>
+                <element signature="e#67#80#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/factories/SubscriptionsFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+              <folding>
+                <element signature="e#67#88#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -276,6 +277,23 @@
               <item name="myblog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="factories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="seeds" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -292,19 +310,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\site\myblog\resources\views\pages" />
-      <recent name="C:\site\myblog\resources\assets\front" />
-      <recent name="C:\site\myblog\resources\assets\admin" />
-      <recent name="C:\site\myblog\resources\views\admin" />
-      <recent name="C:\site\myblog\resources\assets\admin\dist\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\myblog\public\images" />
       <recent name="C:\site\myblog\resources\views\pages" />
       <recent name="C:\site\myblog\resources\views\admin\subscriptions" />
       <recent name="C:\site\myblog\resources\views\admin\comments" />
       <recent name="C:\site\myblog\public\uploads" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\site\myblog\resources\views\pages" />
+      <recent name="C:\site\myblog\resources\assets\front" />
+      <recent name="C:\site\myblog\resources\assets\admin" />
+      <recent name="C:\site\myblog\resources\views\admin" />
+      <recent name="C:\site\myblog\resources\assets\admin\dist\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -366,12 +384,12 @@
       <workItem from="1572352123013" duration="638000" />
       <workItem from="1572358771146" duration="598000" />
       <workItem from="1572360315361" duration="9766000" />
-      <workItem from="1572433481455" duration="1535000" />
+      <workItem from="1572433481455" duration="2936000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308888000" />
+    <option name="totallyTimeSpent" value="310289000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -384,6 +402,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" sideWeight="0.5055679" side_tool="true" weight="0.20067114" />
@@ -391,7 +410,7 @@
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info active="true" anchor="bottom" id="Command Line Tools Console" order="0" weight="0.32991204" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.4986577" visible="true" weight="0.45601174" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.4986577" visible="true" weight="0.30645162" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5013423" side_tool="true" weight="0.54105574" />
       <window_info anchor="bottom" id="Version Control" order="5" weight="0.32991204" />
@@ -668,13 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/SubscriptionsFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
@@ -689,24 +701,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="59" column="36" lean-forward="true" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/TagsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/TagFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
         </state>
       </provider>
     </entry>
@@ -731,20 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -801,6 +785,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2346">
           <caret line="102" column="4" lean-forward="true" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/UserFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#66#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/TagFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
+          <folding>
+            <element signature="e#67#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/SubscriptionsFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+          <folding>
+            <element signature="e#67#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
         </state>
       </provider>
     </entry>
