@@ -16,7 +16,7 @@ git clone **<https://github.com/ruadik/myblog>**
 
 composer install<br>
 yarn or npm install<br>
-cp .env.example .env   - Генерация .ENV (В нем необхожимо прописать имя DB, логин и пароль) <br>
+cp .env.example .env   - Генерация .ENV (В нем необходимо прописать имя созданой DB, логин и пароль) <br>
 php artisan key:generate<br>
 php artisan migrate<br>
 php artisan db:seed<br>
