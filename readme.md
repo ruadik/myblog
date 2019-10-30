@@ -29,7 +29,7 @@ ___
 
 ## Install (Установка)
 
-git clone **<https://github.com/ruadik/myblog>**
+git clone **<https://github.com/ruadik/myblog.git>**
 
 composer install<br>
 yarn or npm install<br>
