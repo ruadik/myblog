@@ -50,7 +50,7 @@ class PostsController extends Controller
     public function edit($id)
     {
         $post = Post::find($id);
-        $categories = Category::pluck('title', 'id');
+        $categories = Category::pluck('title', 'id')->except($post->category_id);
         $tags = Tag::pluck('title', 'id');
         $setTags = $post->Tags->pluck('id')->all();
 

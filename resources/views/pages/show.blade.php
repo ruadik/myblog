@@ -52,7 +52,7 @@
                 <div class="col-md-6">
                     <div class="single-blog-box">
                         <a href="{{route('post.show', $post->getPrevious()->slug)}}">
-                            <img src="{{$post->getPrevious()->getImage()}}" alt="">
+                            <img src="{{$post->getPrevious()->getImage()}}" height="200" width="400">
 
                             <div class="overlay">
 
@@ -70,7 +70,7 @@
                 <div class="col-md-6">
                     <div class="single-blog-box">
                         <a href="{{route('post.show', $post->getNext()->slug)}}">
-                            <img src="{{$post->getNext()->getImage()}}" alt="">
+                            <img src="{{$post->getNext()->getImage()}}" height="200" width="400">
 
                             <div class="overlay">
                                 <div class="promo-text">
@@ -93,7 +93,7 @@
                 @foreach($post->related() as $item)
                     <div class="single-item">
                     <a href="{{route('post.show', $item->slug)}}">
-                        <img src="{{$item->getImage()}}" alt="">
+                        <img src="{{$item->getImage()}}" height="100" width="200">
 
                         <p>{{$item->title}}</p>
                     </a>

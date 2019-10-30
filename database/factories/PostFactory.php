@@ -13,9 +13,9 @@ $factory->define(Post::class, function (Faker $faker) {
         'user_id' => $faker->numberBetween(1, 5),
         'status' => 1,
         'views' => $faker->numberBetween(0, 5000),
-        'is_featured' => 0,
-        'image' => 'I5kNVb49zO.jpeg',
-        'date' => '29/09/19',
+        'is_featured' => $faker->numberBetween(0, 1),
+        'image' => $faker->unique()->numberBetween(101, 114).'.jpg',
+        'date' => '29/12/19',
         'description' => $faker->sentence($nbWords = 26, $variableNbWords = true),
     ];
 });

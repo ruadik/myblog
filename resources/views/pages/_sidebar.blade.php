@@ -2,7 +2,7 @@
     <div class="primary-sidebar">
 
         <aside class="widget news-letter">
-            <h3 class="widget-title text-uppercase text-center">Get Newsletter</h3>
+            <h3 class="widget-title text-uppercase text-center">Подписаться</h3>
 
             @include('admin.errors')
 
@@ -15,7 +15,7 @@
 
         </aside>
         <aside class="widget">
-            <h3 class="widget-title text-uppercase text-center">Popular Posts</h3>
+            <h3 class="widget-title text-uppercase text-center">Популярные посты</h3>
             @foreach($popularPosts as $popularPost)
             <div class="popular-post">
 
@@ -34,13 +34,13 @@
             @endforeach
         </aside>
         <aside class="widget">
-            <h3 class="widget-title text-uppercase text-center">Featured Posts</h3>
+            <h3 class="widget-title text-uppercase text-center">Рекомендуемые посты</h3>
 
             <div id="widget-feature" class="owl-carousel">
                 @foreach($featuredPosts as $featuredPost)
                 <div class="item">
                     <div class="feature-content">
-                        <img src="{{$featuredPost->getImage()}}" alt="">
+                        <img src="{{$featuredPost->getImage()}}" height="200" width="400">
 
                             <a href="{{route('post.show', $featuredPost->slug)}}" class="overlay-text text-center">
                             <h5 class="text-uppercase">{{$featuredPost->title}}</h5>
@@ -53,7 +53,7 @@
             </div>
         </aside>
         <aside class="widget pos-padding">
-            <h3 class="widget-title text-uppercase text-center">Recent Posts</h3>
+            <h3 class="widget-title text-uppercase text-center">Новые посты</h3>
 
             @foreach($recentPosts as $recentPost)
             <div class="thumb-latest-posts">
@@ -75,7 +75,7 @@
 
         </aside>
         <aside class="widget border pos-padding">
-            <h3 class="widget-title text-uppercase text-center">Categories</h3>
+            <h3 class="widget-title text-uppercase text-center">Посты по категориям</h3>
             <ul>
                 @foreach($categories as $category)
                 <li>
