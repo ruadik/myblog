@@ -1,13 +1,13 @@
 ## About myblog
 
 Ready myblog for used. Created with use Laravel 6. <br>
-Deploy on: <br> **<http://my-gallery-laravel-6.herokuapp.com>**
+Deploy on: <br> **<http://my-blog-laravel-6.herokuapp.com>**
 ___
 
 ## О блоге
 
 Готовый блог сделанныей на  Laravel 6. <br>
-Выложен на: <br> **<http://my-gallery-laravel-6.herokuapp.com>**
+Выложен на: <br> **<http://my-blog-laravel-6.herokuapp.com>**
 ___
 
 ## Install (Установка)
@@ -22,11 +22,9 @@ php artisan migrate<br>
 php artisan db:seed<br>
 
 
-php artisan serve<br>
-
-В табличке users в поле **role_id** установите значение **2**, что означает **администратор**. <br>
+В табличке users в поле **is_admin** установите значение **1**, что означает **администратор**. <br>
 Далее входите под этим пользователем и в конце URL пишите **"/admin"**: <br>
-**<http://my-gallery-laravel-6.herokuapp.com/admin>** <br>
+**<http://my-blog-laravel-6.herokuapp.com/admin>** <br>
 Попадете в админ понель. <br>
 Пароль у всех пользователей по умолчанию: **password**
 ___
